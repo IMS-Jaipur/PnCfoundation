@@ -596,7 +596,7 @@ footer b{color:#fff}
   ["Evaluate (6! × 7!) / 3!.","6!/3! = 6 × 5 × 4 = 120;  120 × 7! = 120 × 5040 = 604800","Cancel 3! against 6! first, then multiply.","604800"],
   ["Evaluate n! / [r! (n − r)!] when n = 9 and r = 8.","9! / (8! × 1!) = 9 × 8! / 8! = 9","This is the formula for ⁹C₈ (Chapter 5). Choosing 8 out of 9 is the same as leaving out 1, which can be done in 9 ways.","9"],
   ["Evaluate (6! × 3!) / (3!)!.","(3!)! = 6! = 720;  so (720 × 6) / 720 = 6","Work the inner bracket first: 3! = 6, then 6! = 720.","6"],
-  ["Solve x² − 36 = 0 and write the answer using factorials.","x² = 36  ⇒  x = ±6, and 6 = 3!","Both roots count: x = 3! or x = −3!.","x = ±3!  (±6)"],
+  ["Evaluate 8! / (6! × 2!).","8! = 8 × 7 × 6!, so  (8 × 7 × 6!) / (6! × 2) = 56 / 2 = 28","Peel 8! down to 6! and cancel. This is also ⁸C₂ (Chapter 5): the number of ways to choose 2 things out of 8.","28"],
   ["Solve x² − 4x + 4 = 0 and write the answer using a factorial.","(x − 2)² = 0  ⇒  x = 2 = 2!","A perfect square gives one repeated root.","x = 2!  (2)"],
   // ---- Set B · Counting principle (14–17)
   ["A boy has 3 shirts and 4 trousers. In how many ways can he wear a shirt and a trouser?","3 × 4 = 12","He picks a shirt AND a trouser, so multiply.","12"],
@@ -653,7 +653,7 @@ footer b{color:#fff}
   function T(re,h){return {t:'text',re:re,h:h}}
   var S = [
     N(5040),N(3),N(49),N(3),N(2),N(5),N(4),N(4032),N(604800),N(9),N(6),
-    {t:'set',v:['6','-6'],h:'e.g. 3!, -3!  or  6, -6'},{t:'num',v:['2'],h:'e.g. 2! or 2'},
+    N(28),{t:'num',v:['2'],h:'e.g. 2! or 2'},
     N(12),N(16),N(4),N(12),
     N(840),N(60),N(60480),N(4320),
     N(2401),N(125),N(1296),
